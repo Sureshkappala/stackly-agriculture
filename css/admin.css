@@ -1,0 +1,117 @@
+/* ==========================
+   ADMIN DASHBOARD
+========================== */
+
+.admin-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.section-title{
+    margin-bottom:20px;
+    color:#222;
+}
+
+/* Admin Statistics Cards */
+
+.dashboard-card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-5px);
+}
+
+.dashboard-card h3{
+    font-size:40px;
+    color:#4caf50;
+    margin-bottom:10px;
+}
+
+.dashboard-card p{
+    color:#666;
+}
+
+/* Dashboard Boxes */
+
+.dashboard-box{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.dashboard-box h2{
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+/* Activity Items */
+
+.activity-item{
+    background:#f8f9fa;
+    padding:15px;
+    border-left:4px solid #4caf50;
+    border-radius:10px;
+    margin-bottom:12px;
+    transition:.3s;
+}
+
+.activity-item:hover{
+    background:#eef8ef;
+}
+
+/* Quick Actions */
+
+.quick-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.quick-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.quick-card:hover{
+    transform:translateY(-5px);
+    color:#4caf50;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .admin-row{
+        grid-template-columns:1fr;
+    }
+
+    .quick-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:576px){
+
+    .quick-grid{
+        grid-template-columns:1fr;
+    }
+
+}
