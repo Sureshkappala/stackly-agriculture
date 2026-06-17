@@ -29,3 +29,74 @@
         font-size:16px;
     }
 }
+@media(max-width:991px){
+
+    .about-hero h1{
+        font-size:50px;
+    }
+
+    .our-story h2{
+        font-size:38px;
+    }
+
+    .story-main-image{
+        height:450px;
+        margin-bottom:40px;
+    }
+}
+
+@media(max-width:576px){
+
+    .about-hero{
+        padding:140px 0 80px;
+    }
+
+    .about-hero h1{
+        font-size:36px;
+    }
+
+    .about-hero p{
+        font-size:16px;
+    }
+
+    .our-story h2{
+        font-size:30px;
+    }
+
+    .story-stats{
+        flex-direction:column;
+        gap:20px;
+    }
+}
+@media(max-width:768px){
+
+    .team-intro h2,
+    .leadership-section h2{
+        font-size:36px;
+    }
+
+    .leader-img{
+        height:400px;
+        margin-bottom:30px;
+    }
+
+    .team-img img{
+        height:300px;
+    }
+}
+@media(max-width:768px){
+
+    .login-card{
+        padding:30px 20px;
+    }
+
+    .login-card h2{
+        font-size:28px;
+    }
+
+    .login-options{
+        flex-direction:column;
+        gap:10px;
+        align-items:flex-start;
+    }
+}

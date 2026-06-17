@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly Agriculture</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+    <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+    STACKLY
+</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span><i class="fas fa-bars"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+                <li class="nav-item ms-lg-3">
+    <a href="login.html" class="btn login-btn">
+        <i class="fas fa-user me-2"></i>
+        Login
+    </a>
+</li>
+
+<li class="nav-item ms-lg-2">
+    <a href="contact.html" class="btn custom-btn">
+        Get Started
+    </a>
+</li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<section class="about-hero">
+
+    <div class="container text-center">
+
+        <span class="hero-subtitle">
+            Contact Us
+        </span>
+
+        <h1>
+            Let's Grow Together
+        </h1>
+
+        <p>
+            Get in touch with our agriculture experts and discover
+            sustainable farming solutions for your future.
+        </p>
+
+        <div class="breadcrumb-box">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Contact</span>
+        </div>
+
+    </div>
+
+</section>
+<section class="contact-info">
+
+<div class="container">
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+<div class="contact-card">
+<i class="fas fa-location-dot"></i>
+<h4>Our Location</h4>
+<p>Hyderabad, Telangana, India</p>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="contact-card">
+<i class="fas fa-phone"></i>
+<h4>Phone Number</h4>
+<p>+91 98765 43210</p>
+</div>
+</div>
+
+<div class="col-lg-4">
+<div class="contact-card">
+<i class="fas fa-envelope"></i>
+<h4>Email Address</h4>
+<p>info@stacklyagriculture.com</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+<section class="contact-form-section">
+
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-6">
+
+<img
+src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?q=80&w=1200&auto=format&fit=crop"
+class="contact-img"
+alt="">
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="contact-form">
+
+<h3>Send Us A Message</h3>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="text" placeholder="Subject">
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button
+type="button"
+class="custom-btn"
+onclick="window.location.href='404.html'">
+    Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="map-section">
+
+<iframe
+src="https://maps.google.com/maps?q=hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="500"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</section>
+<section class="faq-section">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<span class="section-badge">
+FAQ
+</span>
+
+<h2>
+Frequently Asked Questions
+</h2>
+
+</div>
+
+<div class="accordion" id="faqAccordion">
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+What services do you provide?
+</button>
+</h2>
+<div id="faq1" class="accordion-collapse collapse show">
+<div class="accordion-body">
+We provide crop management, irrigation solutions,
+organic farming support, and consulting services.
+</div>
+</div>
+</div>
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+How can I contact your team?
+</button>
+</h2>
+<div id="faq2" class="accordion-collapse collapse">
+<div class="accordion-body">
+You can contact us through phone, email,
+or the contact form above.
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+<footer class="footer-section">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <div class="col-lg-4">
+
+                <div class="footer-about">
+
+                    <a href="contact.html" class="footer-logo">
+                      STACKLY
+                     </a>
+
+
+                    <p>
+                        Delivering innovative agricultural solutions,
+                        sustainable farming practices, and long-term
+                        growth opportunities for modern agriculture.
+                    </p>
+
+                    <div class="footer-social">
+
+                        <a href="404.html">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="404.html">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+
+                <h5>Quick Links</h5>
+
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <h5>Services</h5>
+
+                <ul class="footer-links">
+                    <li><a href="#">Crop Management</a></li>
+                    <li><a href="#">Organic Farming</a></li>
+                    <li><a href="#">Farm Planning</a></li>
+                    <li><a href="#">Irrigation Solutions</a></li>
+                    <li><a href="#">Agriculture Consulting</a></li>
+                </ul>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <h5>Contact Info</h5>
+
+                <ul class="footer-contact">
+
+                    <li>
+                        <i class="fas fa-location-dot"></i>
+                        Hyderabad, India
+                    </li>
+
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        +91 98765 43210
+                    </li>
+
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        info@stackly.com
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2025 Stackly Agriculture. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
