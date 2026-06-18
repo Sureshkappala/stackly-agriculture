@@ -69,68 +69,6 @@ window.addEventListener("scroll", () => {
 
 });
 
-// Back To Top Button
-const topBtn = document.getElementById("backToTop");
-
-if(topBtn){
-
-    window.addEventListener("scroll", () => {
-
-        if(window.scrollY > 300){
-            topBtn.style.display = "block";
-        }else{
-            topBtn.style.display = "none";
-        }
-
-    });
-
-    topBtn.addEventListener("click", () => {
-
-        window.scrollTo({
-            top:0,
-            behavior:"smooth"
-        });
-
-    });
-
-}
-
-// Login Form Redirect
-const loginForm = document.getElementById("loginForm");
-
-if(loginForm){
-
-    loginForm.addEventListener("submit", function(e){
-
-        e.preventDefault();
-
-        const role = document.getElementById("role").value;
-
-        if(role === "admin"){
-
-            alert("Admin Login Successful");
-
-            window.location.href = "admin-dashboard.html";
-
-        }
-
-        else if(role === "farmer"){
-
-            alert("Farmer Login Successful");
-
-            window.location.href = "farmer-dashboard.html";
-
-        }
-
-        else{
-
-            alert("Please Select Role");
-
-        }
-
-    });
-
-}
 
 // Password Show/Hide
 const togglePassword = document.getElementById("togglePassword");
@@ -153,3 +91,66 @@ if(togglePassword && password){
     });
 
 }
+window.addEventListener("scroll", () => {
+
+    const navbar =
+    document.querySelector(".custom-navbar");
+
+    if(window.scrollY > 50){
+        navbar.classList.add("scrolled");
+    }
+    else{
+        navbar.classList.remove("scrolled");
+    }
+
+});
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+if(hamburger && navLinks){
+
+    hamburger.addEventListener("click", function(){
+
+        navLinks.classList.toggle("active");
+
+        document.body.classList.toggle("menu-open");
+        document.documentElement.classList.toggle("menu-open");
+
+    });
+
+}
+const navbarCollapse =
+document.getElementById("navbarNav");
+
+if(navbarCollapse){
+
+    navbarCollapse.addEventListener("show.bs.collapse", function () {
+        document.body.classList.add("menu-open");
+    });
+
+    navbarCollapse.addEventListener("hide.bs.collapse", function () {
+        document.body.classList.remove("menu-open");
+    });
+
+}
+
+const navbarContent =
+document.getElementById("navbarContent");
+
+navbarContent.addEventListener("show.bs.collapse", function () {
+
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+
+});
+
+navbarContent.addEventListener("hide.bs.collapse", function () {
+
+    document.body.style.overflow = "auto";
+    document.documentElement.style.overflow = "auto";
+
+});
+
+
+
+
