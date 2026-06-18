@@ -150,6 +150,15 @@ navbarContent.addEventListener("hide.bs.collapse", function () {
     document.documentElement.style.overflow = "auto";
 
 });
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        document.getElementById("loader").style.display = "none";
+
+    }, 2000);
+
+});
 
 
 

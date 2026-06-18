@@ -863,3 +863,35 @@ body{
         margin-bottom:5px;
     }
 }
+.sidebar{
+    width:250px;
+    min-width:250px;
+    background:#245487;
+    color:#fff;
+    padding:30px 20px;
+}
+@media(max-width:768px){
+
+    .sidebar{
+        width:100px;
+        min-width:100px;
+        padding:20px 10px;
+    }
+
+}
+.logo{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.logo img{
+    width:50px;
+    display:block;
+    margin:0 auto 10px;
+}
+
+.logo span{
+    color:#fff;
+    font-size:32px;
+    font-weight:700;
+}

@@ -24,9 +24,10 @@
 <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
     <div class="container">
 
-        <a class="navbar-brand fw-bold fs-3" href="index.html">
-    STACKLY
+         <a class="navbar-brand" href="index.html">
+    <img src="images/logo.webp" alt="Stackly Logo">
 </a>
+
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
             <span><i class="fas fa-bars"></i></span>
@@ -121,7 +122,11 @@
 <div class="contact-card">
 <i class="fas fa-phone"></i>
 <h4>Phone Number</h4>
-<p>+91 98765 43210</p>
+<p>
+<a href="tel:+919876543210">
++91 98765 43210
+</a>
+</p>
 </div>
 </div>
 
@@ -129,7 +134,11 @@
 <div class="contact-card">
 <i class="fas fa-envelope"></i>
 <h4>Email Address</h4>
-<p>info@stacklyagriculture.com</p>
+<p>
+<a href="mailto:info@stacklyagriculture.com">
+info@stacklyagriculture.com
+</a>
+</p>
 </div>
 </div>
 
@@ -158,21 +167,22 @@ alt="">
 
 <h3>Send Us A Message</h3>
 
-<form>
+<form action="404.html">
 
 <input type="text" placeholder="Your Name" required>
 
 <input type="email" placeholder="Email Address" required>
 
-<input type="text" placeholder="Subject">
+<input type="tel" placeholder="Mobile Number" required>
 
-<textarea rows="5" placeholder="Your Message"></textarea>
+<input type="text" placeholder="Subject" required>
 
-<button
-type="button"
-class="custom-btn"
-onclick="window.location.href='404.html'">
-    Send Message
+<textarea rows="5"
+placeholder="Your Message"
+required></textarea>
+
+<button type="submit" class="custom-btn">
+Send Message
 </button>
 
 </form>
